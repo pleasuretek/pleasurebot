@@ -1,0 +1,9 @@
+Pleasurebot
+A turntable.fm bot by Pleasuretek, based on the ttapi from alainGilbert.
+
+To set up the bot make sure you have MySQL somewhere already installed.
+
+*run 'python initdb.py' to setup the yattbotAdmin SQL account.
+*For each bot to be deployed, run 'python createdb.py DATABASENAME' where DATABASENAME is the name of the database to be created
+*look at dummydata.sql and the docs to see how your data should be formatted. There are also database diagrams created using Dia - an open source diagram editor.
+*to start the bot, run 'python main.py DATABASENAME' and the bot will join the channel 

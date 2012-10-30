@@ -1,0 +1,84 @@
+requirements:
+
+FOR BOT:: 
+
+DONE*Access level (normal users, admin, super Users, owners) (depending on userlevel more commands become available...  noobs cant do shit, owners can do shit)
+
+DONE*customizable responses
+
+DONE*custom PM commands and responses
+
+
+go do the ban list first ( 1::enforce ban, 2::add users to ban when moderator boots them or they play shitty music), then manage playlist and songban list (), then manage DJs..
+
+
+DONE*on join, on leave, on change nick  -> events of users (log all that shit in db)
+
+DONE*ban list (keep timeout, reason, name ( UserID), banCount)
+
+*ban sequence- if user is dj and plays songs that get a lot of 'lames' then after 3 songs of this, kick them off the decks and log that they did this and warn (warning table) if they do this 3 times in a day then boot them and add them to ban list
+
+--NOTE-- cant figure out how to manage a queue of DJs to put on turntables, but I can kick djs off decks after playing a certain number of songs..
+
+DONE*If DJ spots are full then -> manage queue to get control of turntable...
+
+DONE*if under 2 DJs THEN make bot DJ (addDJ();), if over 2 DJs THEN have bot step down from decks (removeDJ();)
+
+DONE*ability to keep a list of when people like a track (keep count of likes, if likes is over threshold, add to list) bot DJs from list if there are no active DJs or people waiting ---> keep table of all songs played, if awesomes are over threshold, then snag that song, and put into bot's queue.
+
+*ability to remove DJ from decks if he plays (tries to play) a song that has been lamed a certain number of times... (also keep a ban list of songs (keep timestamp and if longer than 7 days allow song to be played again (keep count of how many times the song gets banned, if banned over 4 times, it is on perma ban list)))
+
+DONE*bot monitors DJs and will become a DJ or come down from decks depending on users and how many want to be DJs..
+
+
+*all bot data (agressivness) can come from database (including ratios for likes, does moderator booting add them to ban... )
+
+NOTES::
+should I keep a ban list for room and a ban list for DJs (even someone cant dj they can listen?)? <--extend to make configurable from dataset
+
+
+
+WANTS::
+
+tinyURL bugURLs (messages to bot parse and do some shit)
+
+
+LOGIC SNIPPETS:
+
+keep track of dj waitlist: user can add themself to DJ waitlist if there are no open spots... When a spot opens, the next dj is popped from the list -> if the DJ that gets on the decks is not the user that we just popped, then remove them from decks and pm them to wait their turn.
+""" psuedo code:
+	if: (over half the people in room awesome and noone lamed),(song gets consitent awesomes and few lames),(also a commnad to do that)
+	then: add song to bot playlist
+	"""
+"""
+	if: (song ended early due to high lames (be a number of times switch(number is config by web)), (able to ban entire terms(bands, remix...)),(consitent lames over awesomes),(tries to play a banned song X(3) times)
+	then: (variable from userspace(remove DJ from decks))and ban song
+	"""
+
+
+checkDJ: 
+""" psuedo code:
+
+        set a flag to only enforce dj queue if a certan number of people are on decks or have it only enforce when full
+        
+	if: there are under (variable value) DJs on the decks currently
+	then: add the bot to the Dj decks
+        
+	if: there are 4 or over DJs on decks (including bot)
+	then: have bot step down from DJing
+	
+	if: DJ decks are full 
+	then: remove users from decks after playing a certain number of songs UNLESS they have a high role (ACL not roll)
+	"""	
+
+TIME TRACKING:
+4-21 : 3 hrs review of project
+4-23 : 6 hrs of project start and tooling
+4-24 : 8 hrs of coding the python project and sql 
+4-25 : 10 hrs of coding
+4-26 : 2 hrs of coding (had other shit I had to do and was sick...)
+4-27 : 10 hrs of coding and design
+4-28 : 2 hrs of coding
+4-29 : 4 hrs of coding
+4-30 : 6 hrs of meeting and coding
+5-1  : 8 hrs of coding (and failed refactoring...)

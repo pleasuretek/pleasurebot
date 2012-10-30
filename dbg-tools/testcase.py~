@@ -1,0 +1,45 @@
+import sys
+import re
+import MySQLdb as mdb
+from datetime import datetime as dt
+from collections import deque
+import random
+from ttapi import Bot
+#from settings import DBHOST,DBUSER,DBPASS
+
+DEBUG = True
+
+class pleasureBot:
+	def __init__(self):
+#		self.bot
+#		self.con
+#		self.roomid
+#		self.adminid
+#		self.userid
+		dbName = None
+		auth   = None
+	
+		self.bot = Bot('auth+live+583320f7e5a458eb161c2a88930556307fd544e7', '4f316824a3f75176aa014dfc', '4f94d6d1eb35c17511000418')
+		self.bot.on('speak', self.checkIt)
+		self.bot.start()
+
+	def checkIt(self, data):
+		print "--checkit--", data['text']
+	
+		methodToCall = getattr(self, data['text'])
+		result = methodToCall()
+		print "-checkit result-", result
+
+	def doit(self):
+		print "----doit---"
+		return "doit"
+
+
+	def doitagain(self):
+		print "---do it again----"
+		return "doitagain"
+
+	print "--init-- "
+	
+
+pb = pleasureBot()

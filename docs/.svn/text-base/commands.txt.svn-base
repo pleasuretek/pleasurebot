@@ -1,0 +1,82 @@
+hello        - bot.speak()
+pm me        - bot.pm('fuckyeah',uid)
+roll         - self.rollin(userid)
+up           - bot.addDj()
+down         - bot.remDJ()
+snag         - bot.snag()
+skip         - bot.stopSong()
+bop          - bot.bop()
+playlist     - self.printPList(userid)
+info         - self.getRoomInfo(userid)
+can I spin   - self.checkSpin(userid)
+djlist       - self.pritnDjq(userid)
+/stagedive   - self.stagedive(userid)
+/shuffle     - self.shufflePlaylist()
+/mostawsomed - self.printMostAwesomed(userid)
+/topdj       - self.topDjs(userid)
+/count       - self.djSongCount(uid)
+
+TODO:
+
+/find
+/dance
+/party
+/mostawesomed
+/mostlamed
+/mostplayed
+/mostloved
+mymostawesomed
+mymostlamed
+mymostloved
+mypastweek
+mystats
+mystats24hours
+/owner
+/ping
+/platforms/
+.fanme
+.hodor
+.pilgrim
+.position
+.pq
+.remaining
+.shiftq
+.similar -----
+.similarartists
+.source
+.unfanme
+.weather
+allpastnames
+bestdjs
+bestplays
+catfact
+djinfo
+joindate
+listbans
+past24hours
+pastweek
+mostsnagged
+points
+reptar
+reptarsucks
+rules
+songinfo
+stats
+uptime
+worstdjs
+
+
+
+#Wolf Pup (dubstep den bot)
+Commands: afks, bestdjs, bestdjs24hours, bestplays, bestplays24hours, /commands, /dance, /bop, /party, /shuffle, /stagedive, djs, /download, /fanme, /find, heartbeat, heartbeat24hours, /joindate, mostawesomed, mostlamed, mostplayed, mostloved, mymostawesomed, mymostlamed, mymostplayed, mymostloved, mypastweek, mystats, mystats24hours, /owner, /ping, /platforms, /position, /rules, /help, /similar, /similarartists, /songinfo, stats, stats24hours, /theme, /uptime, /users, q+, q, q-, /weather, worstdjs, worstdjs24hours
+'q+' adds to djqueue, 'q-' removes from q...
+
+
+#The Official Playa (playaz club bot)
+ ÷÷÷÷÷÷÷÷÷÷÷Commands÷÷÷÷÷÷÷÷÷÷÷ [] w? [] w+ [] w- [] w++ [] -mods [] -plays [] -promote [] -pull [#] [] -remove [#] [][][][] [] -votekick [username] [][][][][][][][][][][][][][] Type -help [command] for more info on a command (ie. -help w?)
+
+#-=JB=- (funk and soul)
+add/drop - join/leave dj queue; awesome - ask to bop; list - view dj queue; next - see whos next to dj; limit current play limit; count - song count (output like "Count: 2-2-1-0-0")
+
+#Sparklebot default
+ Commands: +q, -q, .fanme, .find, .hodor, .owner, .pilgrim, .position, .pq, .quake, .reloadcommands, .remaining, .setsongstoplay, .shiftq, .similar, .similarartists, .source, .unfanme, .weather, /dance, /dive, /roll, allpastnames, any spots opening soon?, banuser, bestdjs, bestplays, can i step up, catfact, commands, djinfo, hodor?, joindate, listbans, mostawesomed, mostlamed, mostnames, mostplayed, mostsnagged, myhearts, mymostawesomed, mymostlamed, mymostplayed, mymostsnagged, mypast24hours, mypastweek, mystats, myuserid, namechange, oh my god meow, past24hours, pastnames, pastweek, ping, platforms, points, reptar, reptar sucks, rules, setavatar, songinfo, stats, unbanuser, uptime, version, waitdjs, worstdjs

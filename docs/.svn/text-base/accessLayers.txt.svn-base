@@ -1,0 +1,6 @@
+access layers::
+0- normal user (visitor and anons)
+1- special user (DJs with good history (can bypass DJ song limit))  (?can they still be banned?)
+2- room moderator (room mods can bootAndBan people and bypass the banlist)
+3- bot admin  (the user who setup the bot and has full control (like root of bot)
+4- bot owner    (DO WE REALLY NEED THIS MANY LEVELS OF CONTROL?)

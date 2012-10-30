@@ -1,0 +1,61 @@
+{"botinfo":
+	{"auth":"auth+live+8497a870a9b79b9fcbee9dda0719a3c53b5cc629",
+	"userid":"4f94e63deb35c17511000427",
+	"botname":"doogie"},
+"roomid":"4f94d6d1eb35c17511000418",
+"admin":"4f91b93aeb35c175110001d2",
+"database":
+	{"usedb":true,
+	"dbname":"botName", 
+    "logchat":true,
+	"tablenames": 
+		{"song": "SONGLIST", 
+		"chat": "CHATLOG", 
+		"user": "USERS", 
+		"holiday": "HOLIDAY_GREETINGS"},
+	"login":{
+		"user":"botName",
+		"password":"botSecret"}},
+"lastfm":
+	{"useapi":true,
+	"lastfmkey":"#####"},
+"tcp":
+	 {"usetcp": false, 
+	"port": 8180, 
+	"host": "localhost"},
+"http":
+    {"usehttp": true,
+    "port": 8181,
+    "host": "localhost"},
+"responses":
+	{"respond":true,
+    "announcebonus":true,
+	"reportsongstats":true,
+	"welcomeusers":true,
+    "welcomepm":true,
+    "alwayspm":true,
+    "pmgreet": "Welcome to Doogie whurled. Type 'commands' to see a list of commands I can respond to.",
+	"greeting":"Welcome, ",
+	"ownerresponse":"sharedferret made me!, pleasuretek modded me",
+	"sing":true, 
+	"rules": 
+		{"description": "No queue, fastest finger, play two songs and step down", 
+		"link": "http://tinyurl.com/63hr2jl"}
+	},
+"consolelog":false,
+"bonusvote":"VOTE",
+"enforcement":
+	{"enforceroom":true,
+    "waitlist":false,
+	"songstoplay":5,
+	"stepuprules":
+		{"waittostepup":true,
+		"waittype":"SONGS",
+		"length":4},
+	"ffarules":
+		{"multiplespotffa":true,
+		"timerffa":true,
+		"timeout":10}
+    }, 
+"maintenance": 
+	{"autorejoin": true}}

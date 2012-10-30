@@ -1,0 +1,7 @@
+BUGLIST::
+
+bot goes through checkBotDj too often and if the bot is already up or down it takes action too fast.  -- several bugs attributed to this factor.
+
+need to add song to end of playlist instead of pos[0]... 
+
+djlimit is enforced when q is not... only enforce dj count when q becomes active (restart count after 5th deck has been open for over a minute)
